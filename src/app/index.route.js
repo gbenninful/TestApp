@@ -12,10 +12,17 @@
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main'
+        controllerAs: 'vm'
+      })
+      .state('customer', {
+        url: '/customer',
+        templateUrl: 'app/customers/customer.html',
+        controller: 'CustomersController',
+        controllerAs: 'vm'
       });
 
     $urlRouterProvider.otherwise('/');
   }
 
 })();
+
